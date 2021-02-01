@@ -1,0 +1,302 @@
+.outer-container {
+   margin:1em;
+   padding: 0.3em;
+   border: 3px solid #585858;
+   border-radius:15px; 
+   background-color: #94a6ef;	   
+   width:auto;	 
+ }
+ 
+ .inner-container {
+  
+   width: 97%; 
+   margin: 5px auto;
+   border-radius: 12px;
+   border: solid #9da5a8 4px; 
+   background-color: #efffff;
+   
+ }
+
+.cheese-card {
+    padding: 5px;
+    color: #ffffff;
+    background-color: #2A5468;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    max-width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cheeses-div {
+    margin: 0.5em auto;
+    max-width: 80%;
+ }
+  .div-description {
+    margin: 0.5em auto;
+    width:90%;
+  }
+ .p-name {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family:  Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 0.8em;
+     font-style: italic;
+     font-weight: bold;
+ }
+ .p-description {
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    font-style: normal;
+    text-align: justify;
+    transition: width 2s, height 2s, transform 2s; 
+ }
+ .p-description:hover{
+    font-size: 1.2em;
+ }
+ .button-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #2A5468;  
+    box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.75);
+    border-radius: 1em;
+    width: 90%;
+    margin: 0.5em auto;
+    
+ }
+
+ .div-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .cheese-img  {
+    width: 100px;   
+    height: auto; 
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    transition: width 2s, height 2s, transform 2s; 
+ }
+ .cheese-img:hover {
+    width:100%;
+    height:auto;
+    margin-bottom: 6px;
+ }
+ .cheese-img-default {
+    width: 100px;   
+    height: auto; 
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 3px;
+ }
+
+ .p-letter{
+    margin: 5px;
+    font-size: 1.5em;
+    font-style: oblique;
+    text-decoration: underline   rgb(42, 84, 104);
+  
+ }
+ .div-links{
+   width: 90%;
+   margin: 1em auto;
+   display: flex; 
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   border: solid 1px #f7f7f8c9; 
+   border-radius: 5px;
+   background-color: #ced5d8;
+ }
+ .link-letters{
+    margin: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: solid 1px #268ff8c9;
+ }
+ .link-cheeses{
+    display: block;
+    width:fit-content;
+    border: 3px solid #474747c9;
+    background-color: #ced5d8;
+    border-radius: 5px;
+    text-decoration-line: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin:0.5em auto;
+    padding:0.1em;
+    color:black;
+ }
+
+ .div-cheese-search{
+   width:95%;
+   margin: 0 auto;
+ }
+ .div-predictive-text {
+   width:fit-content;
+   margin: 0 auto; 
+   display: block;
+ }
+ .div-search-button{
+    margin: 0 auto;
+    display: block;
+ }
+
+
+.cheesesJSON {
+   margin: 0px;
+   margin-left:25px;
+   margin-right: 20px;
+}
+
+.curlyBracket {
+   margin: 0px;
+   margin-left:10px;
+}
+
+/*------------------  Media Queries  --------------------------- */
+
+@media only screen and (min-width: 810px) {
+   .div-cheese-search{
+      width: fit-content;
+      float: right;
+      overflow: hidden;
+      margin-right: 1em;
+   } 
+   .div-predictive-text{
+      width : fit-content;
+      float: left;    
+   }
+   .div-search-button { 
+      width: fit-content;       
+      float: right;   
+      
+   }
+   .link-cheeses{
+      display: block;
+      width: fit-content;
+      border: 3px solid #474747c9;
+      background-color: #ced5d8;
+      border-radius: 5px;
+      text-decoration-line: none;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 1.2em;
+      margin:0.5em;
+      margin-bottom: 1em;
+      padding:0.2em;      
+   }
+   .inner-div-predictive {
+      width: 40%;
+   }
+   .cheese-card {
+      padding: 10px;
+      color: #ffffff;
+      background-color: #2A5468;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.75);
+      border-radius: 10px;
+      max-width: 90%;
+      margin-top: 10px;
+      margin-bottom: 10px; 
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    .cheeses-div {
+      margin: 5em auto;
+      max-width: 90%;
+   }
+    .div-description {
+      margin: 1em auto;
+      width:70%;
+    }
+   .p-name {
+       font-family:  Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 1.5em;
+       font-style: italic;
+       font-weight: bold;
+   }
+   .p-description {
+      font-family:  Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.2em;
+      font-style: normal;
+      text-align: justify;
+      transition: width 2s, height 2s, transform 2s; 
+   }
+   .p-description:hover{
+      font-size: 1.5em;
+   }
+   .button-name {
+      padding: 10px;
+      color: #ffffff;
+      background-color: #2A5468;  
+      box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.75);
+      border-radius: 1.5em;
+      width: 90%;
+      margin: 1em auto;      
+   }  
+   .div-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .cheese-img  {
+      width: 150px;   
+      height: auto; 
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 5px;
+      transition: width 2s, height 2s, transform 2s; 
+   }
+   .cheese-img:hover {
+      width:100%;
+      height:auto;
+      margin-bottom: 10px;
+   }
+   .cheese-img-default {
+      width: 150px;   
+      height: auto; 
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 5px;
+   } 
+   .p-letter{
+      margin: 10px;
+      font-size: 3em;
+      font-style: oblique;
+      text-decoration: underline   rgb(42, 84, 104);   
+   }
+}
+
+   @media only screen and (min-width: 540px){
+        .cheese-card{
+           max-width: 40%;
+        }
+
+       .div-description {
+         margin: 0.5em auto;
+         width:70%;
+       }
+       .div-search-button{
+         margin-top: 0px;
+      }
+   }
+
+   @media only screen and (min-width: 450px){
+      .div-predictive-text{
+         margin-bottom: 1em;
+      }
+   } 
+
+

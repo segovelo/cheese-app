@@ -1,0 +1,5 @@
+npm install --save react-router-dom
+npm install --save react-router-hash-link
+npm install --save react-predictive-text@latest
+npm install --save bootstrap
+npm install react-icons --save

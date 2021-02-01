@@ -1,0 +1,60 @@
+App {
+  text-align: center;
+  height: 5000px;
+}
+
+.scrollTop {
+  position: fixed; 
+  width: 20%;
+  bottom: 30px;
+  align-items: right;
+  height: 25px;
+  justify-content: right;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity  0.4s;
+  opacity: 0.7;
+  margin-left: 75%;  
+  color: #2A5468;
+}
+
+.scrollTop:hover{
+  color: #2A324B;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;  
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+
+
+@media only screen and (min-width: 480px) {
+    .scrollTop{
+      height: 25px;
+      margin-left: 67%;
+  }
+  
+}
+
+@media only screen and (min-width: 810px) {
+  .scrollTop{
+      height: 30px;
+      margin-left: 70%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .scrollTop{
+      height: 35px;
+      margin-left: 72%;
+  }
+}
+
+
