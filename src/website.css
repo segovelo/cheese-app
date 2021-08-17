@@ -1,294 +1,351 @@
 html, body, div, span, h1, h2, h3, 
 h4, h5, h6, p, ol, ul, li, table,caption,    /* Reset CSS and put the margin, padding and */
 tr, th, td, article,aside, canvas,           /* border to zero in all the HTML elements */
-footer, header, menu, nav, section {    
-	                              margin: 0;
-						          padding:0;
-								  border:0;
-                                  }
+footer, header, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
-								  
-   
-    body{
-	    background-color: rgb(255,255,255);
-		font-family: Verdana, Geneva,sans-serif; /*The font family has several */
-	    font-size:16px;                         /* font names as a fallback system */
-	}                                         /*This is done to avoid compability problems */
-												  /*With older browsers and OS */
-	
-	 
-	 
-	#container{
-		      
-	            width:90%;                         /* Set the width of the container div to 905 of the viewport width */
-	 	        height: auto;
-				max-width: 1200px;                  /* But the maximum width will be 1200px, to prevent */
-				background-color: rgb(255,255,255);	 /*   getting to wide on bigger screens i.e. JD monitors 1980px wide*/	                     
-		        padding:0;  
-		        margin: 0 auto;          /* The top and bottom margins are set to zero */
-				border: 2px solid #00022a;  /* Left and Right margins to auto so the div */
-	} 	                                    /* will be centered within the viewport */
-		
-/* -------------------- HEADER SECTION -------------------------------------*/	
-	header{
-		  
-		    background-color: #00022a;   /* I set the properties for the header section */
-		    height: 200px;
-			width: 100%;
-			margin:0 0 2em 0;			
-			align-items:center;
-	}
-	 
-	#prof_pic{
-		       width:15%;
-			   height: auto;
-			   min-width: 75px;
-			   margin:15px 30px 0 40px;
-			   border: 6px solid white;
-			   border-radius: 12px;
-			   vertical-align: middle;
-	}
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, sans-serif; /*The font family has several */
+  font-size: 16px; /* font names as a fallback system */
+} /*This is done to avoid compability problems */
+/*With older browsers and OS */
 
-	#divHeader{
-              display:inline;    /* I set display to inline so is in */
-			  width:60%;         /* the same row as the profile picture */
-			  position:absolute; /* I give absolute positioning */ 
-              right:0;			  
-			  animation:moveDivH 6s linear;
-	}         		 
-	
-	#divHeader h1{
-		       font-size:2em;
-			   font-family: verdana;
-			   color: white;
-		       padding-top:80px;
-               animation: changeColorH1 20s linear 8s infinite;			   
-	}
-	@keyframes moveDivH{     /* Animation to produce motion of moveDivH div tag and the H1 inside */
-	                        0%{right:-1000px;}
-		                    20%{right:-750px;}
-		                    40%{right:-500px;}
-		                    60%{right:-250px;}							   
-		                    80%{right:0px;}							   
-							90%{font-size:1.2em;}	
-							100%{right:0px;
-							     font-size:1em;}
-	}
-	  
-	@keyframes changeColorH1{    /* Animation to produce change of colour of H1 inside moveDivH div tag*/
-	                        0%{color:#ffffff;}
-		                    20%{color:#ffaa44;}
-		                    40%{color:#ff5511;}
-		                    60%{color:#ff665a;}							   
-		                    80%{color:#ffff44;}							   	
-							100%{color:#ffffff;}
-	}  
+#container {
+  width: 90%; /* Set the width of the container div to 905 of the viewport width */
+  height: auto;
+  max-width: 1200px; /* But the maximum width will be 1200px, to prevent */
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /*   getting to wide on bigger screens i.e. JD monitors 1980px wide*/
+  padding: 0;
+  margin: 0 auto; /* The top and bottom margins are set to zero */
+  border: 2px solid #00022a; /* Left and Right margins to auto so the div */
+} /* will be centered within the viewport */
+
+/* -------------------- HEADER SECTION -------------------------------------*/
+header {
+  background-color: #00022a; /* I set the properties for the header section */
+  height: 200px;
+  width: 100%;
+  margin: 0 0 2em 0;
+  align-items: center;
+}
+
+#prof_pic {
+  width: 15%;
+  height: auto;
+  min-width: 75px;
+  margin: 15px 30px 0 40px;
+  border: 6px solid white;
+  border-radius: 12px;
+  vertical-align: middle;
+}
+
+#divHeader {
+  display: inline; /* I set display to inline so is in */
+  width: 60%; /* the same row as the profile picture */
+  position: absolute; /* I give absolute positioning */
+  right: 0;
+  animation: moveDivH 6s linear;
+}
+
+#divHeader h1 {
+  font-size: 2em;
+  font-family: verdana;
+  color: white;
+  padding-top: 80px;
+  animation: changeColorH1 20s linear 8s infinite;
+}
+@keyframes moveDivH {
+  /* Animation to produce motion of moveDivH div tag and the H1 inside */
+  0% {
+    right: -1000px;
+  }
+  20% {
+    right: -750px;
+  }
+  40% {
+    right: -500px;
+  }
+  60% {
+    right: -250px;
+  }
+  80% {
+    right: 0px;
+  }
+  90% {
+    font-size: 1.2em;
+  }
+  100% {
+    right: 0px;
+    font-size: 1em;
+  }
+}
+
+@keyframes changeColorH1 {
+  /* Animation to produce change of colour of H1 inside moveDivH div tag*/
+  0% {
+    color: #ffffff;
+  }
+  20% {
+    color: #ffaa44;
+  }
+  40% {
+    color: #ff5511;
+  }
+  60% {
+    color: #ff665a;
+  }
+  80% {
+    color: #ffff44;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
 /*------------------------- END OF HEADER SECTION------------------------------------------*/
 
-/*--------------- FOOTER  ----------------------------*/	
-footer{
-    clear: both;
-    width:95%;
-    display:block;
-     margin: 10px auto;
-     border: 3px solid #C0C0C0;
-     border-radius:15px;
-     background-color: #FFFFFF;
-     text-align:center;
-     padding:5px;
- }			
- footer h1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 1px;
-    padding: 1px;
- }
- footer h3{
-     font-size: 1em;
-    text-align:right;
- }
- 
- footer p{
-     text-align: left;
-     padding-top: 1px;
- }
- /*----------------- END OF FOOTER ----------------------------*/
- 
-	
-	
+a:hover {
+  background-color: #353388;
+  color: white;
+  font-weight: bold;
+}
 
+/*--------------- FOOTER  ----------------------------*/
+footer {
+  clear: both;
+  width: 95%;
+  display: block;
+  margin: 10px auto;
+  border: 3px solid #c0c0c0;
+  border-radius: 15px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px;
+}
+footer h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1px;
+  padding: 1px;
+}
+footer h3 {
+  font-size: 1em;
+  text-align: right;
+}
 
-	  
-/*----------Media Queries Max-Width:1100px------------------------------*/	 
- 
-    @media (max-width:1100px){
-         header{
-			  height:180px;
-		 }
- }	 
- 
- 
-/*----------Media Queries Max-Width:990px------------------------------*/	  
-	  
-	 @media (max-width:990px){ 
-          header{
-			  height:150px;			 
-		  }
-		  #prof_pic{
-		        margin:10px 20px 0 20px;
-				border:3px solid white;
-		  }		    
-		  #divHeader{
-			  width:75%;
-		  }
-	      #divHeader h1{
-			 padding-top:40px;			
-		  }
-		  @keyframes moveDivH{
-	                        0%{right:-800px;}
-		                    20%{right:-600px;}
-		                    40%{right:-400px;}
-		                    60%{right:-200px;
-							    font-size:1em; }
-		                    80%{right:0px;
-							    font-size:1em;}
-							100%{right:0px;
-							     font-size:1.2em;}
-		  }
-	  }
-	  
-	  
+footer p {
+  text-align: left;
+  padding-top: 1px;
+}
+/*----------------- END OF FOOTER ----------------------------*/
 
-	  	  
+/*----------Media Queries Max-Width:1100px------------------------------*/
 
-/*----------Media Queries Max-Width:800px------------------------------*/	  
-  
-	  @media (max-width: 800px){
-	        #prof_pic{
-		        margin:15px 20px 0 20px;
-				border:3px solid white;
-			}	
-			#divHeader h1{
-			 font-size:1.5em;	
-			 padding-top:50px;			
-		    }
-			@keyframes moveDivH{
-	                        0%{right:-600px;}
-		                    20%{right:-450px;}
-		                    40%{right:-300px;}
-		                    60%{right:-150px;
-							    font-size:1em; }
-		                    80%{right:0px;
-							    font-size:1em;}
-							100%{right:0px;
-							     font-size:1.2em;}
-		    }
-
-            footer h1{
-              font-size:1.2em;   
-		    }	
-            footer h3{
-               font-size:1em;   
-		    }			 			
-	  }  
-
-	  
-/*----------Media Queries Max-Width:680px------------------------------*/	  
-	  
-	  @media (max-width:682px){
-		
-         header{
-			  height:120px;		
-		 }
-		 #prof_pic{
-		        margin:20px 10px 0 10px;
-				border: 1px solid white;
-		 }	
-		 #divHeader h1{
-			 font-size:1.5em;	
-			 padding-top:40px;			
-		 }
-		 @keyframes moveDivH{
-	                        0%{right:-500px;}
-		                    20%{right:-375px;}
-		                    40%{right:-250px;}
-		                    60%{right:-125px;
-							    font-size:1em; }
-		                    80%{right:0px;
-							    font-size:1em;}
-							100%{right:0px;
-							     font-size:1.2em;}
-		 }
-
-          footer{             
-	           width:85%;
-			   padding:0.5em;
-		}		 
-	}
-	
-
-/*----------Media Queries Max-Width:565px------------------------------*/	  
-
-	@media (max-width: 565px){	     
-		footer h1{
-			   font-size:0.8em;
-		}	   
-        footer p{
-		       font-size:0.6em;
-		}
-        footer h3{
-			 font-size:0.6em
-        }		
-	}                         
-	
-
-
-	
-/*----------Media Queries Max-Width:480px------------------------------*/	  
-	
-    @media (max-width: 480px){
-		#container{
-			    width:100%;
-		}	
-		#prof_pic{
-		        margin-right:5px; 
-		}
-		#divHeader{
-			width:70%;
-			right: 10px;
-		}
-     	#divHeader h1{
-			 font-size:1em;	
-			 margin-top:25px;			
-		}
-		@keyframes moveDivH{
-	                        0%{right:-200px;}
-		                    20%{right:-150px;}
-		                    40%{right:-100px;}
-		                    60%{right:-50px;
-							    font-size:1em; }
-		                    80%{right:0px;
-							    font-size:1em;}
-							100%{right:0px;
-							     font-size:1.2em;}
-		}
+@media (max-width: 1100px) {
+  header {
+    height: 180px;
   }
-	
-	
-	
-/*----------Media Queries Max-Width:380px------------------------------*/	  
-		
-    @media (max-width: 380px){
-		#divHeader{
-			width:55%;
-		}	
-        #divHeader h1{
-			 font-size:0.8em;	
-			 padding-top:20px;			
-		}
-    }
+}
 
-	
- 
-	
-	
+/*----------Media Queries Max-Width:990px------------------------------*/
+
+@media (max-width: 990px) {
+  header {
+    height: 150px;
+  }
+  #prof_pic {
+    margin: 10px 20px 0 20px;
+    border: 3px solid white;
+  }
+  #divHeader {
+    width: 75%;
+  }
+  #divHeader h1 {
+    padding-top: 40px;
+  }
+  @keyframes moveDivH {
+    0% {
+      right: -800px;
+    }
+    20% {
+      right: -600px;
+    }
+    40% {
+      right: -400px;
+    }
+    60% {
+      right: -200px;
+      font-size: 1em;
+    }
+    80% {
+      right: 0px;
+      font-size: 1em;
+    }
+    100% {
+      right: 0px;
+      font-size: 1.2em;
+    }
+  }
+}
+
+/*----------Media Queries Max-Width:800px------------------------------*/
+
+@media (max-width: 800px) {
+  #prof_pic {
+    margin: 15px 20px 0 20px;
+    border: 3px solid white;
+  }
+  #divHeader h1 {
+    font-size: 1.5em;
+    padding-top: 50px;
+  }
+  @keyframes moveDivH {
+    0% {
+      right: -600px;
+    }
+    20% {
+      right: -450px;
+    }
+    40% {
+      right: -300px;
+    }
+    60% {
+      right: -150px;
+      font-size: 1em;
+    }
+    80% {
+      right: 0px;
+      font-size: 1em;
+    }
+    100% {
+      right: 0px;
+      font-size: 1.2em;
+    }
+  }
+
+  footer h1 {
+    font-size: 1.2em;
+  }
+  footer h3 {
+    font-size: 1em;
+  }
+}
+
+/*----------Media Queries Max-Width:680px------------------------------*/
+
+@media (max-width: 682px) {
+  header {
+    height: 120px;
+  }
+  #prof_pic {
+    margin: 20px 10px 0 10px;
+    border: 1px solid white;
+  }
+  #divHeader h1 {
+    font-size: 1.5em;
+    padding-top: 40px;
+  }
+  @keyframes moveDivH {
+    0% {
+      right: -500px;
+    }
+    20% {
+      right: -375px;
+    }
+    40% {
+      right: -250px;
+    }
+    60% {
+      right: -125px;
+      font-size: 1em;
+    }
+    80% {
+      right: 0px;
+      font-size: 1em;
+    }
+    100% {
+      right: 0px;
+      font-size: 1.2em;
+    }
+  }
+
+  footer {
+    width: 85%;
+    padding: 0.5em;
+  }
+}
+
+/*----------Media Queries Max-Width:565px------------------------------*/
+
+@media (max-width: 565px) {
+  footer h1 {
+    font-size: 0.8em;
+  }
+  footer p {
+    font-size: 0.6em;
+  }
+  footer h3 {
+    font-size: 0.6em;
+  }
+}
+
+/*----------Media Queries Max-Width:480px------------------------------*/
+
+@media (max-width: 480px) {
+  #container {
+    width: 100%;
+  }
+  #prof_pic {
+    margin-right: 5px;
+  }
+  #divHeader {
+    width: 70%;
+    right: 10px;
+  }
+  #divHeader h1 {
+    font-size: 1em;
+    margin-top: 25px;
+  }
+  @keyframes moveDivH {
+    0% {
+      right: -200px;
+    }
+    20% {
+      right: -150px;
+    }
+    40% {
+      right: -100px;
+    }
+    60% {
+      right: -50px;
+      font-size: 1em;
+    }
+    80% {
+      right: 0px;
+      font-size: 1em;
+    }
+    100% {
+      right: 0px;
+      font-size: 1.2em;
+    }
+  }
+}
+
+/*----------Media Queries Max-Width:380px------------------------------*/
+
+@media (max-width: 380px) {
+  #divHeader {
+    width: 55%;
+  }
+  #divHeader h1 {
+    font-size: 0.8em;
+    padding-top: 20px;
+  }
+}
